@@ -6,8 +6,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        new Buch("1984", "George Orwell", "1234567890");
-        new Buch("Brave New World", "Aldous Huxley", "0987654321");
+        Buch buch1 = new Buch("buch1", "Ich", "0987654321");
+        Buch buch2 = new Buch("buch2", "Du", "0987654322");
+        Buch buch3 = new Buch("buch3", "Er", "0987654323");
+        Buch buch4 = new Buch("buch4", "Sie", "0987654324");
+        Buch buch5 = new Buch("buch5", "Es", "0987654325");
+
+        bibliothek.buchHinzufuegen(buch1);
+        bibliothek.buchHinzufuegen(buch2);
+        bibliothek.buchHinzufuegen(buch3);
+        bibliothek.buchHinzufuegen(buch4);
+        bibliothek.buchHinzufuegen(buch5);
 
         boolean beenden = false;
         while (!beenden) {

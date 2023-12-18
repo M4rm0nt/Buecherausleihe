@@ -8,6 +8,10 @@ public class Bibliothek {
         buecher = new ArrayList<>();
     }
 
+    public void buchHinzufuegen(Buch buch) {
+        buecher.add(buch);
+    }
+
     public void alleBuecherAnzeigen() {
         for (Buch buch : buecher) {
             buch.informationAnzeigen();
